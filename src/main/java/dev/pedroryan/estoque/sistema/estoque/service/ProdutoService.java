@@ -44,4 +44,8 @@ public class ProdutoService {
         return false;
     }
     
+    public boolean removerProduto(int id){
+        return produtos.removeIf(p -> p.getID() == id);
+    }
+    
 }
